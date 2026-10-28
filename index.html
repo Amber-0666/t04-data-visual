@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="images/PowerIcon.png">
+<title>Home</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+
+<header class="topnav" id="site-nav"></header>
+
+<h1>Appliance Energy Consumption</h1>
+
+<!-- NEW: Container for T04-3 chart -->
+<div class="responsive-svg-container"></div>
+
+<footer id="site-footer"></footer>
+
+<script src="script.js"></script>
+<!-- D3 library -->
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<!-- T04-4 CSV loader calls createBarChart after loading the data -->
+<script src="t04-4-load.js"></script>
+<!-- T04-5 chart builder -->
+<script src="t04-5-bars.js"></script>
+<!-- Old JS files (disable while doing T04-4) -->
+<!-- <script src="energy-d3.js"></script> -->
+<!-- <script src="t04-3-bars.js"></script> -->
+</body>
+</html>
